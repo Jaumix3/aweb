@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ca" class="red">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ex9 Jaume Cardona Andreu</title>
+	</head>
+	<body>
+		<h1>DADES DE LA PERSONA PARTICIPANT</h1>
+		<form action="#" method="get">
+			<p>
+				<label for="nom_usuari">Nom</label>
+				<input type="text" name="user-name" minlength="2" maxlength="30" autofocus id="nom_usuari" required>
+			</p>
+			<p>
+				<label for="cognom_usuari">Cognom</label>
+				<input type="text" name="user-surname" minlength="2" maxlength="50" id="cognom_usuari" required>
+			</p>
+			<p>
+				<label for="DNI">DNI (9 caracters)</label>
+				<input type="text" name="user-DNI" maxlength="9" id="DNI" required>
+			</p>
+			<p>
+				<label for ="telefon">Telèfon</label>
+				<input type="tel" name="user-phonenumber" maxlength="100" id="telefon" required>
+			</p>
+			<p>
+				<label for="user_date">Data de neixament</label>
+				<input  type="date" name="user-date" id="user_date" required>
+			</p>
+			<div>
+				<p>Gènere</p>
+				<input type="radio" name="genere1" value="Home" id="user_home" required>
+				<label for="user_home">Home</label>
+				<input type="radio" name="genere2" value="Dona" id="user_dona" required>
+				<label for="user_dona">Dona</label>
+				<input type="radio" name="genere3" value="No binari" id="user_nobinari" required>
+				<label for="user_nobinari">No binari</label>
+			</div>
+			<p>
+				<label for="tipus_via">Adreça: *</label>
+				<select id="tipus_via" name="tipus_via" required>
+					<option value="">-- Tria un tipus de via --</option>
+					<option value="Carrer">Carrer</option>
+					<option value="Avinguda">Avinguda</option>
+					<option value="Carretera">Carretera</option>
+					<option value="Ronda">Ronda</option>
+					<option value="Autopista">Autopista</option>
+					<option value="Rambla">Rambla</option>
+					<option value="Camí">Camí</option>
+					<option value="Altres">Altres...</option>
+				</select>				
+				<input type="text" id="nom_via" name="nom_via" placeholder="Nom de la via" required>
+				<input type="number" id="numero" name="numero" placeholder="Núm." min="1" required>
+			</p>
+			<p>
+				<label for="Municipi">Municipi: </label>
+				<select id="Municipi" name="tipus_via" required>
+					<option value="">-- Tria un municipi --</option>
+					<option value="Maó">Maó</option>
+					<option value="Sant Lluís">Sant Lluís</option>
+					<option value="Es Castell">Es Castell</option>
+					<option value="Alaior">Alaior</option>
+					<option value="Es Mercadal">Es Mercadal</option>
+					<option value="Es Migjorn Gran">Es Migjorn Gran</option>
+					<option value="Ferreries">Ferreries</option>
+					<option value="Ciutadella">Ciutadella</option>
+					<option value="Altres">Altres</option>
+				</select>
+			</p>
+			<p>
+				<label for="id_codipostal">Codi Postal</label>
+				<input type="text" name="Codi postal" id="id_codipostal">
+			</p>
+			<p>
+				<label for="id_club">Club:</label>
+				<input type="text" name="club" id="id_club">
+			</p>
+			<p>
+				<label for="talla_samarreta">Talla samarreta:</label>
+				<select id="talla_samarreta">
+					<option value="triartalla">-- Tria una talla --</option>
+					<option value="XS">XS</option>
+					<option value="S">S</option>
+					<option value="M">M</option>
+					<option value="L">L</option>
+					<option value="XL">XL</option>
+					<option value="XXL">XXL</option>
+				</select>
+			</p>
+		</form>
+		<h1>DADES DE LA CURSA</h1>
+		<h3>Circuits: </h3>
+		<p>Cursa mini (verd 1700m aprox.)</p>
+		<p>Cursa mitjana (blau 4995m aprox.)</p>
+		<p>Cursa gran (vermell 10000m aprox.)</p>
+		<form>
+			<label for="opcions_cursa">Opcions de la cursa:</label>
+			<select id="opcions_cursa">
+				<option value="Tria una cursa">-- Tria una cursa --</option>
+				<option value="Verd">Circuit verd</option>
+				<option value="Blau">Circuit blau</option>
+				<option value="Vermell">Circuit vermell</option>
+			</select>
+			<p>
+				<label>Comentaris</label><br><br>
+				<textarea maxlength="300" placeholder="Entra algún comentari amb un máxim de 300 caràcters" rows="6" cols="70" ></textarea>
+			<p>
+				<input type="checkbox" id="checkbox1">
+				<label for="checkbox1">Accepto i assumeixo les normes de participació que regulen la Cursa Popular Ciutat de XYZ.</label>
+			</p>
+			<p>
+				<input type="checkbox" id="checkbox2">
+				<label for="checkbox2">Que estic interessat/da en rebre informació sobre les activitats esportives organitzades per l’Ajuntament i dono el meu consentiment per a la tramesad’informació al respecte..</label>
+			</p>
+			<button>Envia</button>
+		</form>
+		<h4>Condicions generals</h4>
+		<p><small><strong>Tots els camps marcats amb un asterisc són obligatoris.</strong></small></p>
+		<p><small><strong>El títol de la pàgina ha de ser Formulari d'inscripció a la cursa XYZ.</strong></small></p>
+		<p><small><strong>El mètode d'enviament del formulari ha de ser GET.</strong></small></p>
+		<p><small><strong>El destí de l'enviament del formulari ha de quedar en blanc "".</strong></small></p>
+	</body>
+</html>
