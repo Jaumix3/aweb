@@ -1,0 +1,27 @@
+section p{
+    color: blue;
+}
+
+section > p{
+    color: brown
+}
+h2+p {
+    text-decoration: underline;
+}
+
+ h2 ~ p{
+        font-style: italic;
+ }
+
+*{
+    font-family: sans-seriff;
+    margin: 0;
+}
+
+header{
+    background-color: darkcyan;
+    padding: 10px;
+}
+main{
+    background-color: chocolate;
+}
