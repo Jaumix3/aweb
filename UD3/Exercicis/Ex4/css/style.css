@@ -1,0 +1,87 @@
+:root {
+    --purple:#6d597a;
+    --pink:#b56576;
+    --skin:#eaac8b;
+    --wite:#fff;
+    --black:#000;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+}
+
+header{
+    text-align: center;
+    color: var(--wite);
+    background-color: var(--purple);
+}
+
+main aside{
+    background-color: var(--pink);
+    margin-right: 85%;
+    padding-top: 10px;
+    height: 800px ;
+}
+
+main a{
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+
+}
+main a :visited{
+    text-decoration: none;
+}
+
+main li{
+    list-style: none;
+    padding: 2%;
+}
+
+section{
+    position:absolute;
+    left: 50%;
+}
+
+.card {
+    display: inline-block;
+    text-align: center;
+    background-color: var(--skin);
+    width: 750px;
+    height: 70px;
+    position:absolute;
+    margin: 10px;
+    bottom: 500px;
+    line-height: 75px;
+}
+
+.card:nth-child(1){
+    position: absolute;
+    right: -150px;
+}
+.card:nth-child(2){
+    position: absolute;
+    left: 150px;
+}
+.card:nth-child(3){
+    position: absolute;
+    right: 50px;
+    bottom: 425px;
+    left: -620px;
+}
+.card:nth-child(4){
+    position: absolute;
+    bottom: 425px;
+    left: 150px;
+}
+
+
+footer{
+    text-align: center;
+    color: var(--wite);
+    background-color: var(--purple);
+    height: 50px;
+}
+
