@@ -1,0 +1,99 @@
+:root {
+    --blau: #0081A7;
+    --vermell: #EF233C;
+    --clar: #FAFAFA;
+    --fosc: #181818;
+}
+
+
+body {
+    margin: 0;
+    background: var(--clar);
+    font-family: Arial, sans-serif;
+    color: var(--fosc);
+}
+
+
+header {
+    background: var(--fosc);
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    height: 50px;
+    display: block;
+    margin: 0 10px;
+}
+
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--vermell);
+}
+
+main h1 {
+    text-align: center;
+    margin-top: 25px;
+    color: var(--blau);
+}
+
+
+.cards {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 ;
+    display: block;
+}
+
+.card {
+    background: white;
+    border: 2px solid var(--blau);
+    border-radius: 8px;
+    margin: 20px ;
+    width: 100%;
+    max-width: 350px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    
+}
+
+
+footer {
+    background: var(--fosc);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    margin: 10px;
+    display: block;
+    color: #FAFAFA;
+}
+
+footer a :hover{
+    color: var(--vermell);
+}
+
+@media (min-width:700px){
+    .card{
+        display: inline-block;
+        width: 100%;
+        height: 150px;
+    }
+
+}
+
