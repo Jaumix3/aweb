@@ -27,10 +27,8 @@ header img {
 }
 
 
-nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+header nav a {
+    display: none;
 }
 
 nav a:hover {
@@ -68,31 +66,73 @@ main h1 {
     
 }
 
+aside{
+    background-color: var(--fosc);
+    position: relative;
+    left: 55%;
+    width: 50%;
+    height: 100%;
+}
 
-footer {
-    background: var(--fosc);
-    color: white;
+aside a{
+    display:block;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    text-decoration: none;
+    color: #FAFAFA;
+    
+}
+
+footer{
+    background-color: #181818;
+}
+
+footer p{
+    display: none;
 }
 
 footer a{
-    text-decoration: none;
-    margin: 10px;
-    display: block;
-    color: #FAFAFA;
-}
+    display: none;
 
-footer a :hover{
-    color: var(--vermell);
 }
 
 @media (min-width:700px){
+    header nav a{
+        display: inline;
+    }
+        nav a {
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
     .card{
         display: inline-block;
         width: 100%;
         height: 150px;
+    }
+
+    aside{
+        display: none;
+
+    }
+
+    footer {
+        background: var(--fosc);
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    } 
+   
+    footer a{
+        text-decoration: none;
+        margin: 10px;
+        display: block;
+        color: #FAFAFA;
+    }
+
+    footer a :hover{
+        color: var(--vermell);
     }
 
 }
